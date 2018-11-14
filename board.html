@@ -17,25 +17,32 @@
 
   <body>
 
-    <div class="topnav">
-        <div class="navitems dropdown rightmost" href="members.html">
-            Team
-            <div class="dropdown-content">
-                <a href="board.html">Board</a>
-                <a href="members.html">Members</a>
-            </div>
+    <div class="topnav row">
+
+        <div class="navitems col-sm-1" style="float: left;">
+            <a class="navobj nodropdown" href="index.html">FAST</a>
         </div>
-        <!-- make dropdown here: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button -->
-        <div class="navitems dropdown" href="">
-            Shows
+        
+        <div class="navitems col-sm-1 col-offset-7 dropdown" style="float: right;" >
+            <a class="navobj">Shows</a>
             <div class="dropdown-content">
                 <a href="pastshows1.html">Past Shows 1</a>
                 <a href="pastshows2.html">Past Shows 2</a>
             </div>
         </div>
-        <div class="navitems"><a class="nodropdown">Blog</a></div>
 
-        <div class="navitems leftmost"><a class="nodropdown" href="index.html">FAST</a></div>
+        <div class="navitems col-sm-1 dropdown" style="float: right;">
+            <a class="navobj">Team</a>
+            <div class="dropdown-content">
+                <a href="board.html">Board</a>
+                <a href="members.html">Members</a>
+            </div>
+        </div>
+
+        <div class="navitems col-sm-1" style="float: right;">
+            <a class="navobj nodropdown">Blog</a>
+        </div>
+        
     </div>
 
     <div class="boardcarousel">
