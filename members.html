@@ -9,7 +9,10 @@
     <meta name="keywords" content="FAST Berkeley Fashion Photos Models Design">
     
     <link rel="shortcut icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/main.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <title>FAST</title>
@@ -17,39 +20,49 @@
 
   <body>
 
-    <div class="topnav row">
+    <div class="topnav" id="myTopnav">
 
-        <div class="navitems col-sm-1" style="float: left;">
-            <a class="navobj nodropdown" href="index.html">FAST</a>
-        </div>
-        
-        <div class="navitems col-sm-1 col-offset-7 dropdown" style="float: right;" >
-            <a class="navobj">Shows</a>
-            <div class="dropdown-content">
-                <a href="pastshows1.html">Past Shows 1</a>
-                <a href="pastshows2.html">Past Shows 2</a>
-            </div>
-        </div>
+        <a class="navtitle floatleft" href="index.html">FAST</a>
 
-        <div class="navitems col-sm-1 dropdown" style="float: right;">
-            <a class="navobj">Team</a>
+        <a class="navitem floatright" href="">Blog</a>
+
+        <div class="navitem dropdown floatright">
+            <button class="dropbtn">Team
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
                 <a href="board.html">Board</a>
                 <a href="members.html">Members</a>
             </div>
-        </div>
+        </div> 
 
-        <div class="navitems col-sm-1" style="float: right;">
-            <a class="navobj nodropdown">Blog</a>
-        </div>
-        
+        <div class="navitem dropdown floatright">
+            <button class="dropbtn">Shows
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="">Spring 2018</a>
+                <a href="">Fall 2017</a>
+            </div>
+        </div> 
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
     <div class="memberscarousel">
         Team Photo Goes Here
     </div>
 
-    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
   </body>
 
 </html>
