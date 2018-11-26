@@ -13,6 +13,11 @@
   opacity:0.90;
 }
 
+.row {
+  margin-left:0px;
+  margin-right:0px;
+}
+
 @media screen and (max-width: 770px) {
   .navbar {
     position:relative;
@@ -28,9 +33,11 @@
 }
 
 .boardimg {
-  margin-bottom:10px;
   width:200px;
   height:200px;
+  margin-bottom:10px;
+  object-fit:cover;
+  object-position: 50% 20%;
 }
 
 .boardcontainer {
@@ -39,7 +46,7 @@
   margin-top:1%;
   margin-bottom:1%;
   padding:0;
-  min-width:200px;
+  max-width:200px;
 }
 
 .boarddescription {
@@ -54,7 +61,8 @@
 .membersimg {
   margin-bottom:10px;
   width:200px;
-  height:200px
+  height:200px;
+  overflow:hidden;
 }
 
 .memberscontainer {
@@ -63,7 +71,7 @@
   margin-top:1%;
   margin-bottom:1%;
   padding:0;
-  min-width:200px;
+  max-width:200px;
 }
 
 .membersdescription {
