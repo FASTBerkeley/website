@@ -40,6 +40,10 @@
   object-position: 50% 20%;
 }
 
+.boardimg:hover {
+  opacity: .1;
+}
+
 .boardcontainer {
   margin-left:1%;
   margin-right:1%;
